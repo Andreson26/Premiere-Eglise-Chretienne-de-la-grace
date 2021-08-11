@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+/* Navabr */
+.navbar{
+    background-image: url(images/navbar\ image.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+.navbar .navbar-brand {
+    color: whitesmoke !important;
+}
+img {
+   height: 140px;
+    margin: auto 10px auto 10px;
+}
+.navbar #navbarNavDropdown {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    font-size: large;
+    padding: 15px;
+}
+.navbar .navbar-nav .nav-item {
+    padding: 10px;
+}
+.navbar .navbar-nav .giving {
+    border: 2px solid whitesmoke;
+}
+.navbar .navbar-nav .giving:hover {
+    border-bottom: transparent;
+    background-color: whitesmoke;
+}
+.navbar .navbar-nav .giving .nav-link:hover {
+    color: black !important;
+    border-bottom: transparent;
+}
+
+.navbar .navbar-nav li a {
+    color: whitesmoke !important;
+    text-transform: uppercase;
+    
+    font-family: 'Roboto Condensed', 'sans-serif';
+    transition: border-bottom 400ms ease-in-out, opacity 400ms ease-in-out, transform 400ms ease-in-out;
+}
+.navbar .navbar-nav li a:hover {
+    border-bottom: 1px solid whitesmoke;
+    opacity: 0.5;
+    transform: rotate(30deg);
+}
+
+/* dropdown */
+.navbar .dropdown .nav-link {
+    transition: font-size 0.3s ease;
+}
+.navbar .dropdown .nav-link:hover, .navabr .dropdown .nav-link:active {
+    border-bottom: transparent;
+    transform: none;
+    font-weight: larger;
+    font-size: 20px;
+}
+.dropdown:hover .dropdown-menu,
+.btn-group:hover .dropdown-menu,
+.dropdown:focus .dropdown-menu,
+.btn-group:focus .dropdown-menu,
+.dropdown:focus-within .dropdown-menu,
+.btn-group:focus-within .dropdown-menu  {
+     display: block;
+     height: auto;
+     border-bottom: transparent !important;
+    
+}
+
+.dropdown .dropdown-menu,
+.btn-group .dropdown-menu {
+    margin: auto;
+    background-color: rgba(8, 6, 6, 0.7) !important;
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+    transform: none;
+    color: black !important;
+    
+}
+
+
+ 
+ 
