@@ -1,6 +1,10 @@
+
 body, html {
-    height: 100%;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 /* Navabr */
 .navbar{
@@ -8,8 +12,18 @@ body, html {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30vh;
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
 .navbar .navbar-brand {
     color: whitesmoke !important;
 }
@@ -82,9 +96,118 @@ img {
 .dropdown .dropdown-menu .dropdown-item:hover {
     transform: none;
     color: black !important;
+}
+/*toggle button*/
+.navbar-toggler {
+    background-color: whitesmoke;
+    color: black;
+}
+/*Jumbotrum section*/
+section .jumbotron {
+    background-image: linear-gradient(100deg, rgba(0,0,0,0.5), rgba(0,0,0,0.7)) !important;
+    color: whitesmoke !important;
+    height: 400px;
+    margin-bottom: 0px;
+}
+.container{
+    font-family: 'Roboto Condensed', 'sans-serif';
+    letter-spacing: 3.5px;
+}
+ .subject {
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #d1d0d0, #fff, #cfcdcd);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 10s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+  blockquote p{
+    position: absolute;
+    top: 50vh;
+    left: 40vh;
+    right: 40vh;
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 35px; 
+    font-weight: 200;
+    letter-spacing: 1.5px;
+  }
+
+  blockquote p::before {
+    content: open-quote;
+    font-weight: bold;
+    font-size: 40px;
+    color: whitesmoke;
+}
+blockquote p::after {
+    content: close-quote;
+    font-weight: bold;
+    font-size: 40px;
+    color: whitesmoke;
+}
+h3{
+    position: absolute;
+    top: 75vh;
+    left: 150vh;
+    color: whitesmoke;
+    letter-spacing: 1.5px;
+ 
+}
+/*Footer*/
+/*footer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}*/
+
+.bg-dark {
+    background-color: rgba(0,0,0,0.5);
+}
+.text-white {
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.footer-element {
+    color: whitesmoke;
+    font-weight: 500;
+    font-size:13px;
     
 }
-
-
- 
- 
+span {
+    border-left: 2px solid whitesmoke;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.bottom-page {
+    color: #b4b0b0;
+    margin-top: 30px;
+    font-size: 13px;
+}
+.icons {
+    color: #b4b0b0;
+}
+.text-md-right {
+    padding-right:  25px;
+}
